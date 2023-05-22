@@ -14,13 +14,25 @@
   <!--Formulario-->
   <form action="https://register-demo.freecodecamp.org" method="post">
     <!--Secciones-->
+    <!--Datos/Usuarios-->
     <fieldset>
-      <label for="nombre">Nombre: <input id="nombre" type="text"></label>
-      <label for="apellido">Apellido: <input id="apellido" type="text"></label>
-      <label for="email">Email: <input id="email" type="email"></label>
-      <label for="password">Password: <input id="password" type="password"></label>
+      <label for="nombre">Nombre: <input id="nombre" type="text" required></label>
+      <label for="apellido">Apellido: <input id="apellido" type="text" required></label>
+      <label for="email">Email: <input id="email" type="email" required></label>
+      <label for="password">Password: <input id="password" type="password" pattern="[a-z0-5]{8,}" required></label>
     </fieldset>
-    <fieldset></fieldset>
+    <!--Terminos/Condiciones-->
+    <fieldset>
+      <label>
+
+      </label>
+      <label>
+
+      </label>
+      <label>
+
+      </label>
+    </fieldset>
     <fieldset></fieldset>
     <!--Enviar_Form-->
     <input type="submit" value="Enviar" />
