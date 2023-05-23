@@ -23,17 +23,20 @@
     </fieldset>
     <!--Terminos/Condiciones-->
     <fieldset>
-      <label>
-
+      <label for="cuenta-personal">
+        <input type="radio" name="tipo-de-cuenta" id="cuenta-personal" /> Cuenta Personal
       </label>
-      <label>
-
+      <label for="cuenta-profesional">
+        <input type="radio" name="tipo-de-cuenta" id="cuenta-profesional" /> Cuenta Profesional
       </label>
-      <label>
-
+      <label for="condiciones-generales">
+        <input type="checkbox" id="condiciones-generales" required /> Acepto los <a
+          href="https://www.freecodecamp.org/news/terms-of-service/">Condiciones Generales</a>
       </label>
     </fieldset>
-    <fieldset></fieldset>
+    <fieldset>
+      <label>Cargar una Foto de Perfil: <input type="file" /></label>
+    </fieldset>
     <!--Enviar_Form-->
     <input type="submit" value="Enviar" />
   </form>
