@@ -35,7 +35,21 @@
       </label>
     </fieldset>
     <fieldset>
-      <label>Cargar una Foto de Perfil: <input type="file" /></label>
+      <label for="foto-perfil">Cargar una Foto de Perfil: <input type="file" id="foto-perfil" /></label>
+      <label for="edad">Introduce tu edad (años): <input type="number" min="13" max="120" id="edad" /></label>
+      <!--Desplegable-->
+      <label for="referencia">Como conociste éste Formulario Ultra Secreto?
+        <select id="referencia">
+          <option value="">(seleccione uno)</option>
+          <option value="1">Noticias de Tecnología</option>
+          <option value="2">Redes Sociales (Instagram, Facebook, TikTok)</option>
+          <option value="3">Recomendacion</option>
+          <option value="4">Otros</option>
+        </select>
+      </label>
+      <label for="bio">Biografía:
+        <textarea id="bio" placeholder="Me gusta estudiar en la playa..."></textarea>
+      </label>
     </fieldset>
     <!--Enviar_Form-->
     <input type="submit" value="Enviar" />
