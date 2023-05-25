@@ -16,30 +16,33 @@
     <!--Secciones-->
     <!--Datos/Usuarios-->
     <fieldset>
-      <label for="nombre">Nombre: <input id="nombre" type="text" required></label>
-      <label for="apellido">Apellido: <input id="apellido" type="text" required></label>
-      <label for="email">Email: <input id="email" type="email" required></label>
-      <label for="password">Password: <input id="password" type="password" pattern="[a-z0-5]{8,}" required></label>
+      <label for="nombre" name="nombre">Nombre: <input id="nombre" type="text" name="nombre" required></label>
+      <label for="apellido" name="apellido">Apellido: <input id="apellido" type="text" name="apellido" required></label>
+      <label for="email" name="email">Email: <input id="email" type="email" name="email" required></label>
+      <label for="password" name="password">Password: <input id="password" type="password" pattern="[a-z0-5]{8,}"
+          name="password" required></label>
     </fieldset>
     <!--Terminos/Condiciones-->
     <fieldset>
-      <label for="cuenta-personal">
+      <label for="cuenta-personal" name="cuenta-personal">
         <input type="radio" name="tipo-de-cuenta" id="cuenta-personal" /> Cuenta Personal
       </label>
-      <label for="cuenta-profesional">
+      <label for="cuenta-profesional" name="cuenta-profesional">
         <input type="radio" name="tipo-de-cuenta" id="cuenta-profesional" /> Cuenta Profesional
       </label>
-      <label for="condiciones-generales">
-        <input type="checkbox" id="condiciones-generales" required /> Acepto los <a
+      <label for="condiciones-generales" name="condiciones-generales">
+        <input type="checkbox" id="condiciones-generales" name="condiciones-generales" required /> Acepto los <a
           href="https://www.freecodecamp.org/news/terms-of-service/">Condiciones Generales</a>
       </label>
     </fieldset>
     <fieldset>
-      <label for="foto-perfil">Cargar una Foto de Perfil: <input type="file" id="foto-perfil" /></label>
-      <label for="edad">Introduce tu edad (años): <input type="number" min="13" max="120" id="edad" /></label>
+      <label for="foto-perfil" name="foto-perfil">Cargar una Foto de Perfil: <input type="file" id="foto-perfil"
+          name="foto-perfil" /></label>
+      <label for="edad" name="edad">Introduce tu edad (años): <input type="number" min="13" max="120" id="edad"
+          name="edad" /></label>
       <!--Desplegable-->
-      <label for="referencia">Como conociste éste Formulario Ultra Secreto?
-        <select id="referencia">
+      <label for="referencia" name="referencia">Como conociste éste Formulario Ultra Secreto?
+        <select id="referencia" name="referencia">
           <option value="">(seleccione uno)</option>
           <option value="1">Noticias de Tecnología</option>
           <option value="2">Redes Sociales (Instagram, Facebook, TikTok)</option>
@@ -47,8 +50,8 @@
           <option value="4">Otros</option>
         </select>
       </label>
-      <label for="bio">Biografía:
-        <textarea id="bio" placeholder="Me gusta estudiar en la playa..."></textarea>
+      <label for="bio" name="bio">Biografía:
+        <textarea id="bio" placeholder="Me gusta estudiar en la playa..." name="bio"></textarea>
       </label>
     </fieldset>
     <!--Enviar_Form-->
